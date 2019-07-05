@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>BasketBall Game</title>
+    <link rel ="stylesheet" href = "css/styles.css"/>
+    <script src ="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="div-scoreboard">
+        <div class="div-scoreboard inner">
+            <div class="div-shots-left">
+                <span>left shoots</span>
+                <span id="shots-left">15</span>
+            </div>
+            <div class="div-score">
+                <div class="div-score-name">computer</div>
+                <div id="computer-score" class="div-score-number">0</div>
+            </div>
+
+            <div class="div-score">
+                <div class="div-score-name">user</div>
+                <div id="user-score" class="div-score-number">0</div>
+            </div>
+            <div id="text"></div>
+        </div>
+    </div>
+    <div class="div-control-panel">
+        <div id="div-computer" class="div-panel">
+            <div class="div-control-name">computer</div>
+            <button class= "btn-computer" onclick="onComputerShoot()"disabled>shoot</button>
+        </div>
+
+        <div id="div-user" class="div-panel">
+            <div class="div-control-name">user</div>
+            <button class="btn-user" onclick="onUserShoot(2)">2-point shoot</button>
+            <button class="btn-user" onclick="onUserShoot(3)">3-point shoot</buttoncl>
+        </div>
+    </div>
+</body>
+</body>
+</html>
